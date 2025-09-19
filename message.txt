@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Cute Clicks 📸 | Photography</title>
+  <style>
+    body {
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      margin: 0;
+      padding: 0;
+      background: #f0f8ff;
+      color: #333;
+    }
+    header {
+      background-color: #87cefa;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+    }
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+      color: #fff;
+    }
+    nav {
+      background-color: #add8e6;
+      padding: 10px;
+      text-align: center;
+    }
+    nav a {
+      margin: 0 15px;
+      color: #1e90ff;
+      text-decoration: none;
+      font-weight: bold;
+    }
+    .container {
+      padding: 20px;
+      max-width: 900px;
+      margin: auto;
+    }
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 15px;
+    }
+    .gallery img {
+      width: 100%;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+      transition: transform 0.3s;
+    }
+    .gallery img:hover {
+      transform: scale(1.05);
+    }
+    form {
+      background-color: #f0f8ff;
+      padding: 20px;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 10px;
+      border: 2px solid #87cefa;
+      border-radius: 8px;
+      font-family: inherit;
+    }
+    form button {
+      margin-top: 15px;
+      background-color: #4682b4;
+      color: white;
+      border: none;
+      padding: 10px 20px;
+      border-radius: 8px;
+      cursor: pointer;
+      font-weight: bold;
+    }
+    footer {
+      text-align: center;
+      padding: 15px;
+      background-color: #add8e6;
+      margin-top: 40px;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>📸 Cute Clicks Photography</h1>
+  <p>Capturing magical moments ✨</p>
+</header>
+
+<nav>
+  <a href="#gallery">Gallery</a>
+  <a href="#contact">Book Me</a>
+</nav>
+
+<div class="container">
+  <section id="gallery">
+    <h2>My Work 💕</h2>
+    <div class="gallery">
+      <img src="https://www.instagram.com/ft.stefanfourie/p/DHiledwMKsb-2wZ5zKg4dK_3vMxXBmuZABKARg0/?next=%2F&hl=en/400/300" alt="Cute kitten">
+      <img src="https://placebear.com/400/300" alt="Bear photo">
+      <img src="https://picsum.photos/400/300?random=1" alt="Random">
+      <img src="https://picsum.photos/400/300?random=2" alt="Random">
+      <img src="https://picsum.photos/400/300?random=3" alt="Random">
+      <img src="https://placekitten.com/401/301" alt="Another kitten">
+    </div>
+  </section>
+
+  <section id="contact" style="margin-top: 40px;">
+    <h2>Book a Session 💌</h2>
+
+    <!--
+      Form powered by FormSubmit.co
+      It will forward submissions to stefanfourie449@gmail.com.
+      On first submit you must verify your email (FormSubmit sends a verification link).
+    -->
+    <form method="POST" action="https://formsubmit.co/stefanfourie449@gmail.com">
+      <!-- IMPORTANT: name attributes are required so the service receives the values -->
+      <label for="name">Your Name</label>
+      <input type="text" id="name" name="name" required>
+
+      <label for="email">Email</label>
+      <input type="email" id="email" name="email" required>
+
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Tell me what you're looking for..." required></textarea>
+
+      <!-- Optional: set the subject for the email you receive -->
+      <input type="hidden" name="_subject" value="New booking request from Cute Clicks website">
+
+      <!-- Optional: disable FormSubmit's captcha (set to false). If you want captcha remove this field. -->
+      <input type="hidden" name="_captcha" value="false">
+
+      <!-- Optional: after submit redirect to a 'thank you' page or back to this page -->
+      <input type="hidden" name="_next" value="https://yourdomain.com/thank-you.html">
+
+      <button type="submit">Send Message</button>
+    </form>
+
+    <!-- WhatsApp Contact Button -->
+    <div style="margin-top: 20px; text-align: center;">
+      <a href="https://wa.me/+27627018870" target="_blank" 
+         style="display: inline-block; background-color: #25D366; color: white; padding: 12px 20px; border-radius: 8px; text-decoration: none; font-weight: bold;">
+        💬 Chat with me on WhatsApp
+      </a>
+    </div>
+  </section>
+
+<footer>
+  <p>© 2025 Cute Clicks | Made with love 💖</p>
+</footer>
+
+</div>
+</body>
+</html>
